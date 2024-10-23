@@ -5,6 +5,7 @@
 package CA_2;
 
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -43,6 +44,16 @@ public class Menu {
         }
 
     }
+    
+    public static Department getDepartment(Scanner scanner, List<Department> departments){
+        
+        for(int i = 0; i < departments.size() - 1; i++){
+            System.out.println(i + " -> " + departments.get(i).getName());
+        }
+        return departments.get(scanner.nextInt());
+    }
+    
+    
 
     public static MainOptions getMainOptions(Scanner scanner) {
         while (true) {
