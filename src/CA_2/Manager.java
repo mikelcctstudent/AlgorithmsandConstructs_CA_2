@@ -50,7 +50,7 @@ public class Manager extends Employee{
     
     @Override
     public String toString(){
-        return managerType.toString();
+        return "Manager Type: " + managerType.toString();
     }
 
 }

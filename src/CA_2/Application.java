@@ -55,7 +55,7 @@ public class Application {
             default:
                 System.out.println("Invalid option. Please try again");
         }
-
+        scanner.close();
     }
 
 }
