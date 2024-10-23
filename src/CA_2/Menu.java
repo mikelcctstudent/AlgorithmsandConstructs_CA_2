@@ -13,7 +13,7 @@ import java.util.Scanner;
  *
  * This class is for all enums for the menu
  */
-public class MenuOptions {
+public class Menu {
 
 // This enum will its for show the options for the main menu
     public enum MainOptions {
@@ -52,20 +52,20 @@ public class MenuOptions {
             System.out.println("ADD EMPLOYEE(3)");
             System.out.println("GENERATE EMPLOYEE(4)");
             System.out.println("EXIT(5)");
+            
+            int option = scanner.nextInt();
 
             try {
-                int option = scanner.nextInt();
                 return MainOptions.fromValue(option);
 
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
-            } catch(InputMismatchException e){
-                System.out.println("Invalid input, please enter a valid option. ");
-                scanner.nextInt();
-            }
-
+            } 
         }
 
     }
+    
+    
+    
 }
 
