@@ -8,7 +8,7 @@ package CA_2;
  *
  * @author Mikel
  */
-public class TechMenu {
+public class Main {
     
     public static void main(String[] args) {
         

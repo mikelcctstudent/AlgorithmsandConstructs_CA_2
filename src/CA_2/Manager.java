@@ -21,6 +21,7 @@ public class Manager extends Employee{
         return managerType;
     }
     
+    @Override
     public String toString(){
         return managerType.toString();
     }
