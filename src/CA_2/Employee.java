@@ -4,17 +4,22 @@
  */
 package CA_2;
 
+import java.time.LocalDate;
+
 /**
  *
- * @author Microsoft
+ * @author Mikel
  */
 public class Employee{
 
     private String name;
+    private LocalDate dob;
+    private String address;
   
 
     public Employee(String name) {
         this.name = name;
+        this.dob = dob;
     }
 
     public String getName() {

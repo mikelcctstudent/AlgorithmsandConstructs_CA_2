@@ -43,58 +43,6 @@ public class MenuOptions {
 
     }
 
-    public enum ManagerType {
-        CTO(1),
-        CIO(2),
-        TEAM_LEAD(3);
-
-        private final int value;
-
-        ManagerType(int value) {
-            this.value = value;
-        }
-
-        public int getValue() {
-            return value;
-        }
-
-        public static ManagerType fromValue(int value) {
-            for (ManagerType option : ManagerType.values()) {
-                if (option.getValue() == value) {
-                    return option;
-                }
-            }
-            throw new IllegalArgumentException("Invalid option. Please try to select a valid option");
-        }
-    }
-
-    public enum DepartmentType {
-        SOFTWARE_DEVELPMENT(1),
-        DATA_SCIENCE(2),
-        IT_SUPPORT(3);
-
-        private final int value;
-
-        DepartmentType(int value) {
-            this.value = value;
-        }
-
-        public int getValue() {
-            return value;
-        }
-
-        public static DepartmentType fromValue(int value) {
-            for (DepartmentType option : DepartmentType.values()) {
-                if (option.getValue() == value) {
-                    return option;
-                }
-            }
-
-            throw new IllegalArgumentException("Invalid option. Please try to select a valid option");
-        }
-
-    }
-
     public static MainOptions getMainOptions(Scanner scanner) {
         while (true) {
             System.out.println("Options: ");
