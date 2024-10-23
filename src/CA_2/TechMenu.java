@@ -6,11 +6,12 @@ package CA_2;
 
 /**
  *
- * @author Microsoft
+ * @author Mikel
  */
-public class TechAPP {
+public class TechMenu {
     
     public static void main(String[] args) {
+        
         
     }
     

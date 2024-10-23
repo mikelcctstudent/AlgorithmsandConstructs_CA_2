@@ -42,9 +42,9 @@ public class MenuOptions {
     }
 
     public enum ManagerType {
-        HeadManager(1),
-        AssistantManager(2),
-        TeamLead(3);
+        CTO(1),
+        CIO(2),
+        TEAM_LEAD(3);
 
         private final int value;
         
@@ -67,9 +67,9 @@ public class MenuOptions {
     }
 
     public enum DepartmentType {
-        CustomerService(1),
-        TechnicalSupport(2),
-        HR(3);
+        SOFTWARE_DEVELPMENT(1),
+        DATA_SCIENCE(2),
+        IT_SUPPORT(3);
         
         private final int value;
         
