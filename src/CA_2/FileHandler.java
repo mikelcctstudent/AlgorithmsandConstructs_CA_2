@@ -7,6 +7,8 @@ package CA_2;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,13 +26,16 @@ public class FileHandler {
             String line;
             while ((line = br.readLine()) != null) { // read each line from the file until the end
                 String[] parts = line.split(","); //divide the lines in parts using the commam as delimitador
-                if (parts.length > 0) {
-                    String name = parts[0].trim(); // the first part will be the name of employee
-                    employees.add(new Employee(name));
-                }
+                String id = parts[0].trim();
+                String name = parts[1].trim();
+                String dobString = parts[2].trim();
+                String address = parts[3].trim();
+                String salaryString = parts[4].trim();
+                String departmentId = parts[5].trim();
+                String positionId = parts[6].trim();
+                employees.add(new Employee(id, name, LocalDate.parse(dobString), address, new BigDecimal(salaryString), departmentId, positionId));
             }
-            return employees;
         }
-
+            return employees;
     }
 }
